@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install --no-cache-dir Flask requests
 
 # Make port 80 available to the world outside this container
-EXPOSE 80
+EXPOSE 8080
 
 # Run app.py when the container launches
 CMD ["python", "create_github_issue.py"]
